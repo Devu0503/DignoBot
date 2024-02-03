@@ -28,3 +28,742 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: Diagnose Influenza 1
+  steps:
+  - intent: tell_me_symptom_Fever
+    entities:
+    - Fever: "fever"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Cough
+    entities:
+    - Cough: "cough"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_BodyAche
+    entities:
+    - BodyAche: "body ache"
+  - action: utter_cure_influenza
+
+- story: Diagnose Influenza 2
+  steps:
+  - intent: tell_me_symptom_Cough
+    entities:
+    - Cough: "cough"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_BodyAche
+    entities:
+    - BodyAche: "body ache"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Fever
+    entities:
+    - Fever: "fever"
+  - action: utter_cure_influenza
+
+- story: Diagnose Influenza 3
+  steps:
+  - intent: tell_me_symptom_BodyAche
+    entities:
+    - BodyAche: "body ache"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Fever
+    entities:
+    - Fever: "fever"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Cough
+    entities:
+    - Cough: "cough"
+  - action: utter_cure_influenza
+
+- story: Diagnose Influenza 4
+  steps:
+  - intent: tell_me_symptom_Cough
+    entities:
+    - Cough: "cough"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_BodyAche
+    entities:
+    - BodyAche: "body ache"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Fever
+    entities:
+    - Fever: "fever"
+  - action: utter_cure_influenza
+
+- story: Diagnose Influenza 5
+  steps:
+  - intent: tell_me_symptom_Fever
+    entities:
+    - Fever: "fever"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_BodyAche
+    entities:
+    - BodyAche: "body ache"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Cough
+    entities:
+    - Cough: "cough"
+  - action: utter_cure_influenza
+
+- story: Diagnose Influenza 6
+  steps:
+  - intent: tell_me_symptom_BodyAche
+    entities:
+    - BodyAche: "body ache"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Cough
+    entities:
+    - Cough: "cough"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Fever
+    entities:
+    - Fever: "fever"
+  - action: utter_cure_influenza
+
+- story: Diagnose COVID-19 1
+  steps:
+  - intent: tell_me_symptom_Taste
+    entities:
+    - Taste: "taste"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Breath
+    entities:
+    - Breath: "shortness of breath"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_sore_throat
+    entities:
+    - sore throat : "sore throat"
+  - action: utter_cure_covid
+
+- story: Diagnose COVID-19 2
+  steps:
+  - intent: tell_me_symptom_Breath
+    entities:
+    - Breath: "shortness of breath"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_sore_throat
+    entities:
+    - sore throat : "sore throat"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Taste
+    entities:
+    - Taste: "taste"
+  - action: utter_cure_covid
+
+- story: Diagnose COVID-19 3
+  steps:
+  - intent: tell_me_symptom_sore_throat
+    entities:
+    - sore throat : "sore throat"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Taste
+    entities:
+    - Taste: "taste"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Breath
+    entities:
+    - Breath: "shortness of breath"
+  - action: utter_cure_covid
+
+- story: Diagnose COVID-19 4
+  steps:
+  - intent: tell_me_symptom_Breath
+    entities:
+    - Breath: "shortness of breath"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Taste
+    entities:
+    - Taste: "taste"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_sore_throat
+    entities:
+    - sore throat : "sore throat"
+  - action: utter_cure_covid
+
+- story: Diagnose COVID-19 5
+  steps:
+  - intent: tell_me_symptom_Taste
+    entities:
+    - Taste: "taste"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_sore_throat
+    entities:
+    - sore throat : "sore throat"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Breath
+    entities:
+    - Breath: "shortness of breath"
+  - action: utter_cure_covid
+
+- story: Diagnose COVID-19 6
+  steps:
+  - intent: tell_me_symptom_sore_throat
+    entities:
+    - sore throat : "sore throat"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Breath
+    entities:
+    - Breath: "shortness of breath"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Taste
+    entities:
+    - Taste: "taste"
+  - action: utter_cure_covid
+
+- story: Diagnose Pneumonia 1
+  steps:
+  - intent: tell_me_symptom_Fever
+    entities:
+    - Fever: "fever"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Breath
+    entities:
+    - Breath: "shortness of breath"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_ChestPain
+    entities:
+    - ChestPain: "chest pain"
+  - action: utter_cure_pneumonia
+
+- story: Diagnose Pneumonia 2
+  steps:
+  - intent: tell_me_symptom_Breath
+    entities:
+    - Breath: "shortness of breath"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_ChestPain
+    entities:
+    - ChestPain: "chest pain"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Fever
+    entities:
+    - Fever: "fever"
+  - action: utter_cure_pneumonia
+
+- story: Diagnose Pneumonia 3
+  steps:
+  - intent: tell_me_symptom_ChestPain
+    entities:
+    - ChestPain: "chest pain"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Fever
+    entities:
+    - Fever: "fever"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Breath
+    entities:
+    - Breath: "shortness of breath"
+  - action: utter_cure_pneumonia
+
+- story: Diagnose Pneumonia 4
+  steps:
+  - intent: tell_me_symptom_Fever
+    entities:
+    - Fever: "fever"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_ChestPain
+    entities:
+    - ChestPain: "chest pain"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Breath
+    entities:
+    - Breath: "shortness of breath"
+  - action: utter_cure_pneumonia
+
+- story: Diagnose Pneumonia 5
+  steps:
+  - intent: tell_me_symptom_Breath
+    entities:
+    - Breath: "shortness of breath"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Fever
+    entities:
+    - Fever: "fever"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_ChestPain
+    entities:
+    - ChestPain: "chest pain"
+  - action: utter_cure_pneumonia
+
+- story: Diagnose Pneumonia 6
+  steps:
+  - intent: tell_me_symptom_ChestPain
+    entities:
+    - ChestPain: "chest pain"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Breath
+    entities:
+    - Breath: "shortness of breath"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Fever
+    entities:
+    - Fever: "fever"
+  - action: utter_cure_pneumonia
+
+- story: Diagnose Diabetes 1
+  steps:
+  - intent: tell_me_symptom_Excessive_Thirst
+    entities:
+    - Excessive_Thirst: "excessive thirst"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Frequent_Urination
+    entities:
+    - Frequent_Urination: "frequent urination"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Weakness
+    entities:
+    - Weakness: "weakness"
+  - action: utter_cure_diabetes
+
+- story: Diagnose Diabetes 2
+  steps:
+  - intent: tell_me_symptom_Frequent_Urination
+    entities:
+    - Frequent_Urination: "frequent urination"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Weakness
+    entities:
+    - Weakness: "weakness"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Excessive_Thirst
+    entities:
+    - Excessive_Thirst: "excessive thirst"
+  - action: utter_cure_diabetes
+
+- story: Diagnose Diabetes 3
+  steps:
+  - intent: tell_me_symptom_Weakness
+    entities:
+    - Weakness: "weakness"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Excessive_Thirst
+    entities:
+    - Excessive_Thirst: "excessive thirst"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Frequent_Urination
+    entities:
+    - Frequent_Urination: "frequent urination"
+  - action: utter_cure_diabetes
+
+- story: Diagnose Diabetes 4
+  steps:
+  - intent: tell_me_symptom_Excessive_Thirst
+    entities:
+    - Excessive_Thirst: "excessive thirst"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Weakness
+    entities:
+    - Weakness: "weakness"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Frequent_Urination
+    entities:
+    - Frequent_Urination: "frequent urination"
+  - action: utter_cure_diabetes
+
+- story: Diagnose Diabetes 5
+  steps:
+  - intent: tell_me_symptom_Frequent_Urination
+    entities:
+    - Frequent_Urination: "frequent urination"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Excessive_Thirst
+    entities:
+    - Excessive_Thirst: "excessive thirst"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Weakness
+    entities:
+    - Weakness: "weakness"
+  - action: utter_cure_diabetes
+
+- story: Diagnose Diabetes 6
+  steps:
+  - intent: tell_me_symptom_Weakness
+    entities:
+    - Weakness: "weakness"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Frequent_Urination
+    entities:
+    - Frequent_Urination: "frequent urination"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Excessive_Thirst
+    entities:
+    - Excessive_Thirst: "excessive thirst"
+  - action: utter_cure_diabetes
+
+
+- story: hypertension 1
+  steps:
+  - intent: tell_me_symptom_Headache
+    entities:
+    - Headache: "Headache"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_VisionProblem
+    entities:
+    - VisionProblem: "VisionProblem"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Nosebleeds
+    entities:
+    - Nosebleeds: "Nosebleeds"
+  - action: utter_cure_hypertension
+
+- story: hypertension 2
+  steps:
+  - intent: tell_me_symptom_Headache
+    entities:
+    - Headache: "Headache"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Nosebleeds
+    entities:
+    -  Nosebleeds : "Nosebleeds"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_VisionProblem
+    entities:
+    - VisionProblem : "VisionProblem"
+  - action: utter_cure_hypertension
+
+- story: hypertension 3
+  steps:
+  - intent: tell_me_symptom_VisionProblem
+    entities:
+    - VisionProblem : "VisionProblem"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Nosebleeds
+    entities:
+    -  Nosebleeds : "Nosebleeds"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Headache
+    entities:
+    - Headache: "Headache"
+  - action: utter_cure_hypertension
+
+- story: hypertension 4
+  steps:
+  - intent: tell_me_symptom_VisionProblem
+    entities:
+    - VisionProblem : "VisionProblem"
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Headache
+    entities:
+    - Headache: "Headache"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Nosebleeds
+    entities:
+    -  Nosebleeds : "Nosebleeds"
+  - action: utter_cure_hypertension
+
+- story: hypertension 5
+  steps:
+  - intent: tell_me_symptom_Nosebleeds
+    entities:
+    -  Nosebleeds : "Nosebleeds"
+  - action: utter_cure_hypertension
+  - action: utter_tell_more
+  - intent: tell_me_symptom_Headache
+    entities:
+    - Headache: "Headache"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_VisionProblem
+    entities:
+    - VisionProblem : "VisionProblem"
+  - action: utter_cure_hypertension
+
+- story: hypertension 6
+  steps:
+  - intent: tell_me_symptom_Nosebleeds
+    entities:
+    -  Nosebleeds : "Nosebleeds"
+  - action: utter_cure_hypertension
+  - action: utter_tell_more
+  - intent: tell_me_symptom_VisionProblem
+    entities:
+    - VisionProblem : "VisionProblem"
+  - action: utter_tell_more_2
+  - intent: tell_me_symptom_Headache
+    entities:
+    - Headache: "Headache"
+  - action: utter_cure_hypertension
+
+- story: I have only headache
+  steps:
+  - intent: tell_me_symptom_Headache
+    entities:
+    - Headache : "headache"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_headache
+
+- story: I have only stomachache
+  steps:
+  - intent: tell_me_symptom_Stomachache
+    entities:
+    - Stomachache : "stomachache"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_stomachache
+
+- story: I have only fever
+  steps:
+  - intent: tell_me_symptom_Fever
+    entities:
+    - Fever : "fever"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_fever
+
+- story: I have only difficulty in breathing
+  steps:
+  - intent: tell_me_symptom_Breath
+    entities:
+    - Breath : "difficulty in breathing"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_breathing_issue
+
+- story: I have only taste problem
+  steps:
+  - intent: tell_me_symptom_Taste
+    entities:
+    - Taste : "taste problem"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_taste_issue
+
+# - story: I have only fever
+#   steps:
+#   - intent: tell_me_symptom_Fever
+#     entities:
+#     - Fever : "fever"
+#   - action: utter_tell_more
+#   - intent: only_one_symptom
+#   - action: utter_cure_fever
+
+- story: I have only chest pain
+  steps:
+  - intent: tell_me_symptom_ChestPain
+    entities:
+    - ChestPain : "chest pain"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_chest_pain
+
+- story: I have only joint pain or swelling
+  steps:
+  - intent: tell_me_symptom_JointPainSwelling
+    entities:
+    - JointPainSwelling : "joint pain or swelling"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_joint_pain_swelling
+
+- story: I have only vision problems
+  steps:
+  - intent: tell_me_symptom_VisionProblem
+    entities:
+    - VisionProblem : "vision problems"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_vision_problem
+
+- story: I have only nosebleeds
+  steps:
+  - intent: tell_me_symptom_Nosebleeds
+    entities:
+    - Nosebleeds : "nosebleeds"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_nosebleeds
+
+- story: I have only memory loss
+  steps:
+  - intent: tell_me_symptom_MemoryLoss
+    entities:
+    - MemoryLoss : "memory loss"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_memory_loss
+
+- story: I have only problem solving difficulties
+  steps:
+  - intent: tell_me_symptom_DifficultyProblemSolving
+    entities:
+    - ProblemSolving : "problem solving difficulties"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_problem_solving
+
+- story: I have only disorientation
+  steps:
+  - intent: tell_me_symptom_Disorientation
+    entities:
+    - Disorientation : "disorientation"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_disorientation
+
+- story: I have only loss in height
+  steps:
+  - intent: tell_me_symptom_LossInHeight
+    entities:
+    - LossInHeight : "loss in height"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_loss_in_height
+
+- story: I have only fragile bones prone to fractures
+  steps:
+  - intent: tell_me_symptom_FragileBones
+    entities:
+    - FragileBones : "fragile bones prone to fractures"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_fragile_bones
+
+- story: I have only skin color loss in patches
+  steps:
+  - intent: tell_me_symptom_SkinColorLoss
+    entities:
+    - SkinColorLoss : "skin color loss in patches"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_skin_color_loss
+
+- story: I have only premature graying of hair
+  steps:
+  - intent: tell_me_symptom_GrayingHair
+    entities:
+    - GrayingHair : "premature graying of hair"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_graying_hair
+
+- story: I have only sunburn easily
+  steps:
+  - intent: tell_me_symptom_Sunburn
+    entities:
+    - Sunburn : "sunburn easily"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_sunburn
+
+- story: I have only sore throat
+  steps:
+  - intent: tell_me_symptom_sore_throat
+    entities:
+    - sore throat : "sore throat"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_sore_throat
+
+- story: I have only watery stools
+  steps:
+  - intent: tell_me_symptom_WateryStools
+    entities:
+    - WateryStools : "watery stools"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_watery_stools
+
+- story: I have only body ache
+  steps:
+  - intent: tell_me_symptom_BodyAche
+    entities:
+    - BodyAche : "body ache"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_body_ache
+
+- story: I have only cough
+  steps:
+  - intent: tell_me_symptom_Cough
+    entities:
+    - Cough : "cough"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_cough
+
+- story: I have only frequent urination
+  steps:
+  - intent: tell_me_symptom_Frequent_Urination
+    entities:
+    - Frequent_Urination : "frequent urination"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_frequent_urination
+
+- story: I have only excessive thirst
+  steps:
+  - intent: tell_me_symptom_Excessive_Thirst
+    entities:
+    - Excessive_Thirst : "excessive thirst"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_excessive_thirst
+
+- story: I have only sensitivity to light
+  steps:
+  - intent: tell_me_symptom_Sensitivity_to_Light
+    entities:
+    - Sensitivity_to_Light : "sensitivity to light"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_sensitivity_to_light
+
+# - story: I have only headache
+#   steps:
+#   - intent: tell_me_symptom_Headache
+#     entities:
+#     - Headache : "headache"
+#   - action: utter_tell_more
+#   - intent: only_one_symptom
+#   - action: utter_cure_headache
+
+# - story: I have only stomachache
+#   steps:
+#   - intent: tell_me_symptom_Stomachache
+#     entities:
+#     - Stomachache : "stomachache"
+#   - action: utter_tell_more
+#   - intent: only_one_symptom
+#   - action: utter_cure_stomachache
+
+- story: I have only back pain
+  steps:
+  - intent: tell_me_symptom_BackPain
+    entities:
+    - BackPain : "back pain"
+  - action: utter_tell_more
+  - intent: only_one_symptom
+  - action: utter_cure_back_pain
+
+# - story: I have only Morning Stiffness
+#   steps:
+#   - intent: tell_me_symptom_MorningStiffness
+#     entities:
+#     - BackPain : "MorningStiffness"
+#   - action: utter_tell_more
+#   - intent: only_one_symptom
+#   - action: utter_cure_MorningStiffness
+
+# - story: I have only Wheezing
+#   steps:
+#   - intent: tell_me_symptom_Wheezing
+#     entities:
+#     - BackPain : "Wheezing"
+#   - action: utter_tell_more
+#   - intent: only_one_symptom
+#   - action: utter_cure_Wheezing
+
+# - story: I have only weakness
+#   steps:
+#   - intent: tell_me_symptom_weakness
+#     entities:
+#     - BackPain : "Weakness"
+#   - action: utter_tell_more
+#   - intent: only_one_symptom
+#   - action: utter_cure_weakness
+
+
+
+- story: fallback
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
