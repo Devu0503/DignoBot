@@ -1,0 +1,22 @@
+.message {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 7px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.user-msg {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: #fff;
+}
+.message img {
+    width: 50px;
+    border-radius: 15px;
+    align-self: flex-start;
+}
+.name-and-msg {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

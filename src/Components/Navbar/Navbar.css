@@ -1,0 +1,25 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: rgb(240, 233, 247);
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgb(112, 26, 193);
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-right a {
+    font-size: 16px;
+    background: rgb(31, 30, 30);
+    padding: 8px 10px;
+    color: #fff;
+    border-radius: 5px;
+}

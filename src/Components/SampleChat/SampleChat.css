@@ -1,0 +1,63 @@
+.sample-chat {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    user-select: none;
+}
+.sample-chat img{
+    width: 50px;
+    border-radius: 50%;
+}
+.s-chat-messages ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.s-chat-messages ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.s-chat-messages {
+    padding: 15px;
+}
+.s-chat-messages ul li div {
+    padding: 10px;
+    border-radius: 0 20px 20px 20px;
+}
+.s-chat-top {
+    display: flex;
+    gap: 10px;
+    background: rgb(214, 187, 239);
+    padding: 5px 15px;
+    border-radius: 10px 10px 0 0;
+}
+.s-chat-top p {
+    font-size: 18px;
+    font-weight: 500;
+    color: blueviolet;
+    margin-top: 5px;
+}
+.s-msg-right {
+    align-self: flex-end;
+}
+.s-msg-left div {
+    color: #fff;
+    background: blueviolet;
+}
+.s-msg-right div {
+    background: #ece7e7;
+}
+.s-chat-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: #cfcbcb;
+    border-radius: 0 0 10px 10px;
+}
+.s-chat-bottom-right {
+    display: flex;
+    gap: 5px;
+}
